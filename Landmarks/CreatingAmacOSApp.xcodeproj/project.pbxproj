@@ -10,7 +10,6 @@
 		88D74E2924F790440001DC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D74E2824F790440001DC76 /* AppDelegate.swift */; };
 		88D74E2B24F790440001DC76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D74E2A24F790440001DC76 /* ContentView.swift */; };
 		88D74E2D24F790460001DC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D74E2C24F790460001DC76 /* Assets.xcassets */; };
-		88D74E3024F790460001DC76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D74E2F24F790460001DC76 /* Preview Assets.xcassets */; };
 		88D74E3324F790460001DC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D74E3124F790460001DC76 /* Main.storyboard */; };
 		88D74E3A24F7B8900001DC76 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739487F229F28B900C47603 /* Landmark.swift */; };
 		88D74E3B24F7B8900001DC76 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2AAC4229F4D7C0061E5F5 /* UserData.swift */; };
@@ -35,6 +34,8 @@
 		88D74E4E24F7B8900001DC76 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7394889229F292E00C47603 /* umbagog.jpg */; };
 		88D74E4F24F7B8900001DC76 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B73948A2229F3E2200C47603 /* charleyrivers.jpg */; };
 		88D74E5124F7B9B60001DC76 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D74E5024F7B9B60001DC76 /* LandmarkRow.swift */; };
+		88D74E5524FA3C660001DC76 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D74E5424FA3C660001DC76 /* LandmarkList.swift */; };
+		88D74E5724FA3F4E0001DC76 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D74E5624FA3F4E0001DC76 /* Filter.swift */; };
 		9357B0942318808300826E1D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9357B0922318808300826E1D /* Interface.storyboard */; };
 		9357B0962318808400826E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9357B0952318808400826E1D /* Assets.xcassets */; };
 		9357B09D2318808400826E1D /* WatchLandmarks Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9357B09C2318808400826E1D /* WatchLandmarks Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -175,12 +176,13 @@
 		88D74E2824F790440001DC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D74E2A24F790440001DC76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88D74E2C24F790460001DC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		88D74E2F24F790460001DC76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88D74E3224F790460001DC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88D74E3424F790460001DC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88D74E3524F790460001DC76 /* MacLandmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacLandmarks.entitlements; sourceTree = "<group>"; };
 		88D74E3924F795E80001DC76 /* Landmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Landmarks.entitlements; sourceTree = "<group>"; };
 		88D74E5024F7B9B60001DC76 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		88D74E5424FA3C660001DC76 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		88D74E5624FA3F4E0001DC76 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		9357B0902318808300826E1D /* WatchLandmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchLandmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9357B0932318808300826E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		9357B0952318808400826E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -325,6 +327,8 @@
 				88D74E3524F790460001DC76 /* MacLandmarks.entitlements */,
 				88D74E2E24F790460001DC76 /* Preview Content */,
 				88D74E5024F7B9B60001DC76 /* LandmarkRow.swift */,
+				88D74E5424FA3C660001DC76 /* LandmarkList.swift */,
+				88D74E5624FA3F4E0001DC76 /* Filter.swift */,
 			);
 			path = MacLandmarks;
 			sourceTree = "<group>";
@@ -332,7 +336,6 @@
 		88D74E2E24F790460001DC76 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				88D74E2F24F790460001DC76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -639,7 +642,6 @@
 				88D74E4524F7B8900001DC76 /* chincoteague.jpg in Resources */,
 				88D74E4624F7B8900001DC76 /* hiddenlake.jpg in Resources */,
 				88D74E4924F7B8900001DC76 /* rainbowlake.jpg in Resources */,
-				88D74E3024F790460001DC76 /* Preview Assets.xcassets in Resources */,
 				88D74E4B24F7B8900001DC76 /* stmarylake.jpg in Resources */,
 				88D74E2D24F790460001DC76 /* Assets.xcassets in Resources */,
 				88D74E4024F7B8900001DC76 /* hikeData.json in Resources */,
@@ -722,9 +724,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D74E2B24F790440001DC76 /* ContentView.swift in Sources */,
+				88D74E5724FA3F4E0001DC76 /* Filter.swift in Sources */,
 				88D74E3D24F7B8900001DC76 /* Profile.swift in Sources */,
 				88D74E3C24F7B8900001DC76 /* Data.swift in Sources */,
 				88D74E3E24F7B8900001DC76 /* Hike.swift in Sources */,
+				88D74E5524FA3C660001DC76 /* LandmarkList.swift in Sources */,
 				88D74E2924F790440001DC76 /* AppDelegate.swift in Sources */,
 				88D74E3B24F7B8900001DC76 /* UserData.swift in Sources */,
 				88D74E5124F7B9B60001DC76 /* LandmarkRow.swift in Sources */,
